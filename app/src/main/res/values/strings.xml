@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ShoppingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="BUY_PRODUCT">buy</string>
+    <string name="shopping_cart">SHOPPING CART</string>
+    <string name="full_description">Latest Collection with latest technology,high sound quality. Most selling product in the market. It is now availaible with 20% off.</string>
+    <string name="description">Apple Headphone Latest Collection</string>
+    <string name="name">HEADPHONE</string>
+    <string name="price">PRICE 50,000</string>
+    <string name="quantity">Qty : 1</string>
+    <string name="order_total">ORDER TOTAL: Rs 50,000</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="end">Thank you for purchasing %1$s. You will soon get an email confirming the order. Your product will be shipped in 4 to 5 days</string>
+    <string name="cont">CONTINUE SHOPPING</string>
+    <string name="title_activity_product">Product</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_product_adapter">ProductAdapter</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/Home">
+    <fragment
+        android:id="@+id/Home"
+        android:name="com.example.ecommerce.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_Home_to_detail"
+            app:destination="@id/detail" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/Checkout"
+        android:name="com.example.ecommerce.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/action_Checkout_to_thanks"
+            app:destination="@id/thanks"
+            app:popUpTo="@id/detail" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.ecommerce.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detail_to_Checkout"
+            app:destination="@id/Checkout" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/thanks"
+        android:name="com.example.ecommerce.ThanksFragment"
+        android:label="fragment_thanks"
+        tools:layout="@layout/fragment_thanks" >
+        <action
+            android:id="@+id/action_thanks_to_Home"
+            app:destination="@id/Home"
+            app:popUpTo="@id/Home" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>
