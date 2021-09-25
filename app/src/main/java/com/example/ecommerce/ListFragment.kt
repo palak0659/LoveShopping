@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.fragment_list.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -31,12 +32,12 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val productList = view.findViewById<RecyclerView>(R.id.product_list).apply {
+        val productList = product_list.apply {
             layoutManager = LinearLayoutManager(activity)
 
             adapter = ProductAdapter {
                 val bundle = Bundle()
-                bundle.putInt("ID", id)
+                bundle.putInt("ID", it.id)
                 findNavController().navigate(R.id.action_Home_to_detail,bundle)
 
             }

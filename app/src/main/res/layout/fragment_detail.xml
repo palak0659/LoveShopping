@@ -41,7 +41,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="36dp"
         android:text="@string/full_description"
-        android:textSize="34sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

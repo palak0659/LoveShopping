@@ -7,29 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_checkout.*
+import kotlinx.android.synthetic.main.fragment_detail.*
+import kotlinx.android.synthetic.main.fragment_thanks.*
+import kotlinx.android.synthetic.main.list_item.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ThanksFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ThanksFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +22,6 @@ class ThanksFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_thanks, container, false)
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         var product: Product? = null
         val id = arguments?.getInt("ID")
@@ -50,17 +33,18 @@ class ThanksFragment : Fragment() {
             with(it) {
 
 
-
-                val con: Button = view.findViewById(R.id.con)
-
-                con.setOnClickListener()
-                {
+                con.setOnClickListener{
                     val bundle = Bundle()
                     bundle.putInt("ID", this.id)
-                    findNavController().navigate(R.id.action_detail_to_Checkout, bundle)
+                    findNavController().navigate(R.id.action_thanks_to_Home, bundle)
                 }
 
             }
         }
     }
 }
+
+
+
+
+

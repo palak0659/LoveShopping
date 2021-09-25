@@ -9,7 +9,7 @@ val products = mutableListOf<Product>(Product(1 , "HEADPHONE", 50000F, R.drawabl
         "The devices enable users to speak voice commands to interact with services through Google Assistant, the company's virtual assistant."),
     Product(3 , "LAPTOP", 90000F, R.drawable.laptop,"10th Gen Intel® Core™ i9 10900K",
         "Equipped with an 8-core 11th Gen Intel® Core™ i9 for high-performance gaming, and an FHD 360Hz display with NVIDIA G-SYNC® for smooth gameplay."),
-    Product(4 , "Google Home", 60000F, R.drawable.earpod,"Voice Control With Hey Siri.",
+    Product(4 , "Ear Pod", 67000F, R.drawable.earpod,"Voice Control With Hey Siri.",
         "24 hour total battery life with Charging Case.\n" +
                 "3 hours charge from case in 15 minutes.")
 )
